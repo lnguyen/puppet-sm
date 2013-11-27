@@ -1,0 +1,8 @@
+iname    'sm'
+version '0.0.1'
+source 'https://github.com/longnguyen11288/puppet-sm'
+author 'longnguyen11288'
+license 'Apache License, Version 2.0'
+summary 'Module for managing and configuring sm'
+description 'Module for managing and configuring sm'
+project_page 'https://github.com/longnguyen11288/puppet-sm'
