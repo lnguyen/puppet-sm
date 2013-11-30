@@ -28,6 +28,7 @@
 # * Long Nguyen <mailto:long.nguyen11288@gmail.com>
 #
 class sm::params {
-
   $ensure = 'present'
+  $exts = []
+  $sets = {}
 }

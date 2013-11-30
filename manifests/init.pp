@@ -39,9 +39,16 @@
 #
 
 class sm(
-   $ensure              = $sm::params::ensure
+   $ensure              = $sm::params::ensure,
+   $exts                = $sm::params::exts,
+   $sets                = $sm::params::sets
   
 ) inherits sm::params {
-  class { 'sm::install': }
+  class { 'sm::install': 
+  }
+
+  class { 'sm::packages': 
+    require => Class['sm::install']
+  }
 }
 
