@@ -23,7 +23,7 @@ class sm::packages {
             before => Exec["install ${package} with command ${next_command}"]
           } 
         } else {
-          exec { "install ${package} with ${command}":
+          exec { "install ${package} with command ${command}":
             command => "sm ${package} ${command}",
             path => "/opt/sm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
             require => Exec["installing set ${set}"],
